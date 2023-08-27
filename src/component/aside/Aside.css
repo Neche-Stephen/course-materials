@@ -1,0 +1,44 @@
+.aside-canvas{
+    background: #3936BC;
+}
+
+.aside{
+    color: white;
+    height: 100vh;
+}
+
+.aside-title{
+    background-color: #FF9A9A;
+    color: #2A2A2A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aside-row{
+    padding: 30px;
+}
+
+.aside-topics{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media (max-width:991px){
+    .aside{
+        background: #3936BC;
+    }
+    .aside-offcanvas{
+        width: 40% !important;
+    }
+}
+
+
+@media (max-width:575px){
+    .aside-offcanvas{
+        width: 50% !important;
+    }
+}
+
+
