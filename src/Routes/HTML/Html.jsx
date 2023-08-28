@@ -15,7 +15,7 @@ import IntroToAttributes from '../../component/html-topics/IntroToAttributes/Int
 import IntroToHtml from '../../component/html-topics/IntroToHtml/IntroToHtml';
 
 // Topics Name
-const topics = ['BoxModel', 'Background'];
+const htmlTopics = ["Introdution To Html", 'Introdution To Attributes'];
 
 function HtmlComponent() {
   const [show, setShow] = useState(false);
@@ -41,8 +41,8 @@ function HtmlComponent() {
      <div className='container-fluid'>
         <Row>
           <aside className = "col-3">
-            <Aside IntroToHtml = "Introdution To Html" IntroToAttributes = {'Introdution To Attributes'}
-            showHtmlTopic = {showHtmlTopic}
+            <Aside IntroToHtml = "Introdution To Html" IntroToAttributes = 'Introdution To Attributes'
+            showHtmlTopic = {showHtmlTopic} htmlTopics = { htmlTopics}
             show = {show} setShow ={setShow} handleShow = {handleShow} handleClose = {handleClose} />
           </aside>
            

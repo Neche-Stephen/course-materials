@@ -15,7 +15,7 @@ import IntroCss from '../../component/css-topics/IntroCss/Intro-css';
 import StylingText from '../../component/css-topics/StylingText/stylingText';
 
 // Topics Name
-const topics = ['BoxModel', 'Background'];
+const cssTopics = ["Styling Text",'Introduction to CSS'];
 
 function CssComponent() {
   const [show, setShow] = useState(false);
@@ -41,8 +41,7 @@ function CssComponent() {
      <div className='container-fluid'>
         <Row>
           <aside className = "col-3">
-            <Aside Styling_Text = "Styling Text" Intro_CSS = {'Introduction to CSS'}
-            showCssTopic = {showCssTopic}
+            <Aside showCssTopic = {showCssTopic} cssTopics  = {cssTopics}
             show = {show} setShow ={setShow} handleShow = {handleShow} handleClose = {handleClose} />
           </aside>
            

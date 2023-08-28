@@ -19,7 +19,7 @@ import DataTypes from '../../component/jsTopics/DataTypes/DataTypes';
 
 
 // Topics Name
-const topics = ['BoxModel', 'Background'];
+const jsTopics = ["Introduction to Programming" , 'Introduction to Javascript'];
 
 function JsComponent() {
   const [show, setShow] = useState(false);
@@ -45,8 +45,7 @@ function JsComponent() {
      <div className='container-fluid'>
         <Row>
           <aside className = "col-3">
-            <Aside IntroToProg = "Introduction to Programming" IntroToJs = {'Introduction to Javascript'}
-            showJsTopic = {showJsTopic}
+            <Aside jsTopics = {jsTopics} showJsTopic = {showJsTopic}
             show = {show} setShow ={setShow} handleShow = {handleShow} handleClose = {handleClose} />
           </aside>
            

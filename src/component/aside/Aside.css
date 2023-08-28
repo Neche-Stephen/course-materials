@@ -8,7 +8,7 @@
 }
 
 .aside-title{
-    background-color: #FF9A9A;
+    background-color: #FF9A9A !important;
     color: #2A2A2A;
     font-size: 20px;
     font-weight: 600;
@@ -16,11 +16,16 @@
 
 .aside-row{
     padding: 30px;
+    background: #D0FFBF;
 }
 
-.aside-topics{
+.aside-link{
     text-decoration: none;
-    color: white;
+    color: #3936BC;
+}
+
+.aside-topic{
+    background: #FF9A9A;
 }
 
 

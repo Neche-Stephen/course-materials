@@ -10,37 +10,48 @@ import './Aside.css';
 
 function Aside(props) {
   const { 
-    showHtmlTopic, IntroToHtml, IntroToAttributes, 
-    showCssTopic, Intro_CSS, Styling_Text,
-    showJsTopic, IntroToProg, IntroToJs,
+    showHtmlTopic, htmlTopics,
+    showCssTopic, cssTopics,
+    showJsTopic,jsTopics,
     show, setShow, handleClose, handleShow} = props;
+
+    // const htmlTopics = [IntroToHtml, IntroToAttributes]
 
   return (
         <>
           <Offcanvas className ="aside-offcanvas" show={show} onHide={handleClose} responsive="lg">
                <div className = "aside">
-                <Row className='aside-row aside-title'>
+                <Row className='aside-row aside-title mb-1'>
                   <Col>
                     Courses
                   </Col>
                 </Row>
-               <Row className='aside-row'>
-                      <p ><Link className='aside-topics' to='/html'>HTML</Link></p>
-                    {IntroToHtml && <p onClick={()=>{showHtmlTopic(IntroToHtml)}}>{IntroToHtml}</p>}
-                    {IntroToAttributes && <p onClick={()=>{showHtmlTopic(IntroToAttributes)}}>{IntroToAttributes}</p>}
+               <Row className='aside-row mb-1'>
+                      <p className='aside-link' ><Link className='aside-link' to='/html'>HTML</Link></p>
                 </Row>
+                {
+                      htmlTopics &&  htmlTopics.map((htmlTopic, index) => {
+                        return  <Row key={index}><p className='aside-topic' onClick={()=>{showHtmlTopic(htmlTopic)}}>{htmlTopic}</p></Row>
+                       })
+                  }
 
-                <Row className='aside-row'>
-                  <p ><Link className='aside-topics' to='/css'>CSS</Link></p>
-                  {Intro_CSS && <p onClick={()=>{showCssTopic('Intro_CSS')}}>{Intro_CSS}</p>}
-                  {Styling_Text && <p onClick={()=>{showCssTopic('Styling_Text')}}>{Styling_Text}</p>}
+                <Row className='aside-row mb-1'>
+                  <p ><Link className='aside-link' to='/css'>CSS</Link></p>
                 </Row>
+                {
+                    cssTopics &&  cssTopics.map((cssTopic, index) => {
+                      return  <Row key={index}><p className='aside-topic' onClick={()=>{showCssTopic(cssTopic)}}>{cssTopic}</p></Row>
+                      })
+                }
 
-                <Row className='aside-row'>
-                  <p><Link className='aside-topics' to='/js'>JS</Link></p>
-                  {IntroToProg && <p onClick={()=>{showJsTopic(IntroToProg)}}>{IntroToProg}</p>}
-                  {IntroToJs && <p onClick={()=>{showJsTopic(IntroToJs)}}>{IntroToJs}</p>}
+                <Row className='aside-row mb-1'>
+                  <p><Link className='aside-link' to='/js'>JS</Link></p>
                 </Row>
+                {
+                    jsTopics &&  jsTopics.map((jsTopic, index) => {
+                      return  <Row key={index}><p className='aside-topic' onClick={()=>{showJsTopic(jsTopic)}}>{jsTopic}</p></Row>
+                      })
+                }
                </div>
           </Offcanvas>
             </>
