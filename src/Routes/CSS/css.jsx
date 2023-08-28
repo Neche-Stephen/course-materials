@@ -15,7 +15,7 @@ import IntroCss from '../../component/css-topics/IntroCss/Intro-css';
 import StylingText from '../../component/css-topics/StylingText/stylingText';
 
 // Topics Name
-const cssTopics = ["Styling Text",'Introduction to CSS'];
+const cssTopics = ['Introduction to CSS',"Styling Text"];
 
 function CssComponent() {
   const [show, setShow] = useState(false);
@@ -25,10 +25,10 @@ function CssComponent() {
   const [topic, setTopic] = useState(<IntroCss />);
 
   const showCssTopic = (topicName)=>{
-    if (topicName === 'Intro_CSS'){
+    if (topicName === 'Introduction to CSS'){
     setTopic(<IntroCss />)
     }
-    else if (topicName === 'Styling_Text'){
+    else if (topicName === 'Styling Text'){
       setTopic(<StylingText />)
       }
 

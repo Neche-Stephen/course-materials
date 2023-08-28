@@ -15,8 +15,10 @@
 }
 
 .aside-row{
-    padding: 30px;
+    padding-left: 30px;
     background: #D0FFBF;
+    height: 40px;
+    align-items: center;
 }
 
 .aside-link{
@@ -25,7 +27,15 @@
 }
 
 .aside-topic{
+    padding-left: 30px;
     background: #FF9A9A;
+    min-height: 40px;
+    align-items: center;
+    width: 85%;
+}
+
+.aside-topic:hover{
+   cursor: pointer;
 }
 
 
@@ -37,12 +47,19 @@
     .aside-offcanvas{
         width: 40% !important;
     }
+    .aside-row{
+        width:103%;
+    }
 }
 
 
 @media (max-width:575px){
     .aside-offcanvas{
         width: 50% !important;
+    }
+
+    .aside-row{
+        width:104%;
     }
 }
 

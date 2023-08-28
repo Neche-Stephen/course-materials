@@ -27,29 +27,29 @@ function Aside(props) {
                   </Col>
                 </Row>
                <Row className='aside-row mb-1'>
-                      <p className='aside-link' ><Link className='aside-link' to='/html'>HTML</Link></p>
+                      <Col><Link className='aside-link' to='/html'>HTML</Link> </Col>
                 </Row>
                 {
                       htmlTopics &&  htmlTopics.map((htmlTopic, index) => {
-                        return  <Row key={index}><p className='aside-topic' onClick={()=>{showHtmlTopic(htmlTopic)}}>{htmlTopic}</p></Row>
+                        return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showHtmlTopic(htmlTopic)}}>{htmlTopic}</span></Row>
                        })
                   }
 
                 <Row className='aside-row mb-1'>
-                  <p ><Link className='aside-link' to='/css'>CSS</Link></p>
+                  <Col><Link className='aside-link' to='/css'>CSS</Link> </Col>
                 </Row>
                 {
                     cssTopics &&  cssTopics.map((cssTopic, index) => {
-                      return  <Row key={index}><p className='aside-topic' onClick={()=>{showCssTopic(cssTopic)}}>{cssTopic}</p></Row>
+                      return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showCssTopic(cssTopic)}}>{cssTopic}</span></Row>
                       })
                 }
 
                 <Row className='aside-row mb-1'>
-                  <p><Link className='aside-link' to='/js'>JS</Link></p>
+                  <Col><Link className='aside-link' to='/js'>JS</Link> </Col>
                 </Row>
                 {
                     jsTopics &&  jsTopics.map((jsTopic, index) => {
-                      return  <Row key={index}><p className='aside-topic' onClick={()=>{showJsTopic(jsTopic)}}>{jsTopic}</p></Row>
+                      return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showJsTopic(jsTopic)}}>{jsTopic}</span></Row>
                       })
                 }
                </div>

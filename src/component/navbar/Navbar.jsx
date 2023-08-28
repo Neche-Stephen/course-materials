@@ -30,7 +30,7 @@ export default function Navbar({handleShow}) {
         </Col>
 
         <Col className="d-lg-none" xs = '1'>
-              <div className='d-flex align-items-center navbar-height'><i onClick={handleShow} class="bi bi-menu-button"></i></div>
+              <div className='d-flex align-items-center navbar-height'><i onClick={handleShow} className="bi bi-menu-button"></i></div>
         </Col>
 
         <Col xs = '6' lg ='9' className='p-0' >
