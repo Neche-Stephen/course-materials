@@ -13,7 +13,7 @@ export default function Navbar({handleShow}) {
     <>
       <nav className='container-fluid navbar-menu'>
         <Row className='navbar-row'>
-            <Col className='navbar-logo' xs = '3'>
+            <Col className='navbar-logo'xs = '5' sm = '3'>
                 <div className='d-flex align-items-center navbar-height'>
                     <Link to='/'><img className='img-fluid' src={RAD5_LOGO} alt="" /></Link>
                 </div>
@@ -23,7 +23,7 @@ export default function Navbar({handleShow}) {
                   <div className='d-flex align-items-center navbar-height'><button onClick={handleShow} className="bi bi-justify"></button></div>
             </Col>
 
-            <Col   xs = '6' sm ='6' lg ='9' className='' >
+            <Col   xs = '4' sm ='6' lg ='9' className='' >
                     <div className='navbar-title navbar-height d-flex justify-content-center align-items-center'>
                           <h1 style={{whiteSpace:'nowrap'}}> <span className='d-none d-sm-inline'>RAD5</span>StudySphere</h1>
                     </div>
