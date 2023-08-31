@@ -23,9 +23,9 @@ export default function Navbar({handleShow}) {
               <div className='d-flex align-items-center navbar-height'><button onClick={handleShow} className="bi bi-justify"></button></div>
         </Col>
 
-        <Col xs = '6' lg ='9' className='p-0' >
+        <Col xs = '8' sm ='6' lg ='9' className='p-0' >
                 <div className='navbar-title navbar-height d-flex justify-content-center align-items-center'>
-                      <h1>RAD5 CONNEKT</h1>
+                      <h1 style={{whiteSpace:'nowrap'}}>RAD5 StudySphere</h1>
                 </div>
         </Col>
         

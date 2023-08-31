@@ -28,7 +28,7 @@ function Aside(props) {
                   </Col>
                 </Row>
              
-                <Link className='aside-row aside-link mb-1 row' to='/html'>
+                <Link onClick={handleShow} className='aside-row aside-link mb-1 row' to='/html'>
                       <Col>HTML</Col>
                 </Link>
                 {

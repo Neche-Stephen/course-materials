@@ -4,13 +4,17 @@
 
 .navbar-menu{
     background-color:#D4D4D4;
+    font-family: Montserrat;
 }
 .navbar-title{
     background-color:#D4D4D4;
     color: #3936BC;
 }
 
-
 .navbar-height{
     height: 80px;
+}
+
+.navbar-height button{
+    all : unset;
 }
