@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row,Col } from 'react-bootstrap';
 
+import './TopicComponent.css'
+
 export default function TopicComponent( {topicDetails}) {
     const {title, learningObjective, lectureMaterialLink, ResourcesLink} = topicDetails;
   return (
-    <div>
+    <div className='topic_component'>
          <Container>
             <Row className='mb-5'>
                 <Col>
