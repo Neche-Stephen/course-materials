@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 
 import Aside from './component/aside/Aside';
-import HtmlComponent from './Routes/HTML/Html';
+import Navbar from './component/navbar/Navbar';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -13,12 +13,7 @@ function App() {
   const handleShow = () => setShow(true);
   return (
    <>
-      <nav>
-        <Button variant="primary" className="d-lg-none" onClick={handleShow}>
-          Launch
-        </Button>
-      </nav>
-    
+     <Navbar />
      <div className='container-fluid'>
         <Row>
             <aside className = "col-3">

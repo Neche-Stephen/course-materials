@@ -18,22 +18,55 @@ import IntroToProg from '../../component/jsTopics/IntroToProg/IntroToProg';
 import DataTypes from '../../component/jsTopics/DataTypes/DataTypes';
 
 
-// Topics Name
-const jsTopics = ["Introduction to Programming" , 'Introduction to Javascript'];
+// Topics
+const defaultJsTopics = [
+  {
+    topicName: 'Introduction to Programming',
+    clicked: true
+  },
+  {
+    topicName: 'Introduction to Javascript',
+    clicked: false
+  },
+  {
+    topicName: 'Introduction to Javascript Data types',
+    clicked: false
+  }
+]
 
 function JsComponent() {
+  const [jsTopics, setJsTopics] = useState(defaultJsTopics);
+  const [topic, setTopic] = useState(<IntroToProg />);
+
+//Offcanvas state
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [topic, setTopic] = useState(<IntroToProg />);
+  const toggleTopicClicked = (clickedTopicName) =>{
+    const updatedTopics = jsTopics.map((topic) => ({
+      ...topic,
+      clicked: topic.topicName === clickedTopicName,
+    }));
+    setJsTopics(updatedTopics);
+  }
 
   const showJsTopic = (topicName)=>{
     if (topicName === 'Introduction to Programming'){
-    setTopic(<IntroToProg />)
+    setTopic(<IntroToProg />);
+    toggleTopicClicked(topicName);
+
     }
     else if (topicName === 'Introduction to Javascript'){
-      setTopic(<IntroToJs />)
+      setTopic(<IntroToJs />);
+      toggleTopicClicked(topicName);
+
+      }
+
+    else if (topicName === 'Introduction to Javascript Data types'){
+      setTopic(<DataTypes />);
+      toggleTopicClicked(topicName);
+
       }
 
    

@@ -15,9 +15,28 @@ import IntroCss from '../../component/css-topics/IntroCss/Intro-css';
 import StylingText from '../../component/css-topics/StylingText/stylingText';
 
 // Topics Name
-const cssTopics = ['Introduction to CSS',"Styling Text"];
+const defaultCssTopics = [
+  {
+    topicName: 'Introduction to CSS',
+    clicked: true
+  },
+  {
+    topicName: 'Styling Text',
+    clicked: false
+  }
+];
 
 function CssComponent() {
+  const [cssTopics, setCssTopics] = useState(defaultCssTopics);
+
+  const toggleTopicClicked = (clickedTopicName) =>{
+    const updatedTopics = cssTopics.map((topic) => ({
+      ...topic,
+      clicked: topic.topicName === clickedTopicName,
+    }));
+    setCssTopics(updatedTopics);
+  }
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,10 +45,14 @@ function CssComponent() {
 
   const showCssTopic = (topicName)=>{
     if (topicName === 'Introduction to CSS'){
-    setTopic(<IntroCss />)
+    setTopic(<IntroCss />);
+    toggleTopicClicked(topicName);
+    
     }
     else if (topicName === 'Styling Text'){
-      setTopic(<StylingText />)
+    setTopic(<StylingText />);
+    toggleTopicClicked(topicName);
+
       }
 
    

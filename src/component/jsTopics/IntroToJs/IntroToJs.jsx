@@ -1,7 +1,33 @@
-import React from 'react'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
+
+import TopicComponent from '../../topicComponent/TopicComponent';
+
+
+const topicDetails = {
+        title : 'Introduction to Javascript',
+        learningObjective : '',
+        lectureMaterialLink : [
+            {
+                materialName : 'Introduction to Javascript',
+                materialLink : "https://docs.google.com/document/d/18AP9H_O6Upr_CvkiNDW_goPLYIxcLi0Vb1hggtjKfOw/edit?usp=sharing",
+            }
+        ],
+        ResourcesLink : [
+            {
+                resourceLink : "https://javascript.info/variables",
+                resourceName : 'Variables'
+            },
+            ]
+}
 
 export default function IntroToJs() {
+  
   return (
-    <div>IntroToJs</div>
+    <div>
+        <TopicComponent topicDetails = {topicDetails} />
+
+    </div>
   )
 }

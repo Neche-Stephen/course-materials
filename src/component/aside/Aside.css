@@ -32,11 +32,18 @@
     min-height: 40px;
     align-items: center;
     width: 85%;
+    border: unset;
+    text-align: justify;
 }
 
 .aside-topic:hover{
    cursor: pointer;
 }
+
+.aside-topic button{
+    all: unset;
+}
+
 
 
 

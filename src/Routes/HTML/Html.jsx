@@ -14,22 +14,52 @@ import Navbar from '../../component/navbar/Navbar';
 import IntroToAttributes from '../../component/html-topics/IntroToAttributes/IntroToAttributes';
 import IntroToHtml from '../../component/html-topics/IntroToHtml/IntroToHtml';
 
-// Topics Name
-const htmlTopics = ["Introdution To Html", 'Introdution To Attributes'];
+// Topics
+const defaultHtmlTopics = [
+    {
+      topicName : "Introdution To HTML",
+      clicked : true
+    },
+    {
+      topicName : 'Introdution To Attributes',
+      clicked : false
+    },
+    // {
+    //   topicName : 'Introdution To Layout',
+    //   clicked : false
+    // },
+];
+
 
 function HtmlComponent() {
+  const [htmlTopics, setHtmlTopics] = useState(defaultHtmlTopics);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const [topic, setTopic] = useState(<IntroToHtml/>);
 
+  const toggleTopicClicked = (clickedTopicName) =>{
+          const updatedTopics = htmlTopics.map((topic) => ({
+            ...topic,
+            clicked: topic.topicName === clickedTopicName,
+          }));
+      
+          setHtmlTopics(updatedTopics);
+  }
+
+ 
+
   const showHtmlTopic = (topicName)=>{
-    if (topicName === 'Introdution To Html'){
-    setTopic(<IntroToHtml />)
+    console.log('clicked')
+    if (topicName === 'Introdution To HTML'){
+    setTopic(<IntroToHtml />);
+    toggleTopicClicked(topicName);
     }
     else if (topicName === 'Introdution To Attributes'){
-      setTopic(<IntroToAttributes />)
+      setTopic(<IntroToAttributes />);
+    toggleTopicClicked(topicName);
+
       }
 
    

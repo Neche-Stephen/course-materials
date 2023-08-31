@@ -26,30 +26,46 @@ function Aside(props) {
                     Courses
                   </Col>
                 </Row>
-               <Row className='aside-row mb-1'>
+               {/* <Row className='aside-row mb-1'>
                       <Col><Link className='aside-link' to='/html'>HTML</Link> </Col>
-                </Row>
+                </Row> */}
+                <Link className='aside-row aside-link mb-1 row' to='/html'>
+                      <Col>HTML</Col>
+                </Link>
                 {
                       htmlTopics &&  htmlTopics.map((htmlTopic, index) => {
-                        return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showHtmlTopic(htmlTopic)}}>{htmlTopic}</span></Row>
+                        return (
+                           <button key={index} style={{backgroundColor : htmlTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={htmlTopic.clicked} onClick={()=>{showHtmlTopic(htmlTopic.topicName)}}>
+                           {htmlTopic.topicName}
+                          </button>
+
+                        )
                        })
                   }
 
-                <Row className='aside-row mb-1'>
-                  <Col><Link className='aside-link' to='/css'>CSS</Link> </Col>
-                </Row>
+                  <Link className='aside-row aside-link mb-1 row' to='/css'>
+                        <Col>CSS</Col>
+                  </Link>
                 {
                     cssTopics &&  cssTopics.map((cssTopic, index) => {
-                      return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showCssTopic(cssTopic)}}>{cssTopic}</span></Row>
+                      return (
+                        <button key={index} style={{backgroundColor : cssTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={cssTopic.clicked} onClick={()=>{showCssTopic(cssTopic.topicName)}}>
+                        {cssTopic.topicName}
+                       </button>
+                      )
                       })
                 }
 
-                <Row className='aside-row mb-1'>
-                  <Col><Link className='aside-link' to='/js'>JS</Link> </Col>
-                </Row>
+                  <Link className='aside-row aside-link mb-1 row' to='/js'>
+                      <Col>JS</Col>
+                  </Link>
                 {
                     jsTopics &&  jsTopics.map((jsTopic, index) => {
-                      return  <Row className='aside-topic mb-1' key={index}><span onClick={()=>{showJsTopic(jsTopic)}}>{jsTopic}</span></Row>
+                      return (
+                        <button key={index} style={{backgroundColor : jsTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={jsTopic.clicked} onClick={()=>{showJsTopic(jsTopic.topicName)}}>
+                          {jsTopic.topicName}
+                       </button>
+                      )
                       })
                 }
                </div>
