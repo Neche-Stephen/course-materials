@@ -21,14 +21,13 @@ function Aside(props) {
         <>
           <Offcanvas className ="aside-offcanvas" show={show} onHide={handleClose} responsive="lg">
                <div className = "aside">
-                <Row className='aside-row aside-title mb-1'>
+                <Row style={{minHeight: '70px'}} className='aside-row aside-title mb-1'>
                   <Col>
-                    Courses
+                     <i className="bi bi-book me-3"></i>
+                     <span>COURSES</span>
                   </Col>
                 </Row>
-               {/* <Row className='aside-row mb-1'>
-                      <Col><Link className='aside-link' to='/html'>HTML</Link> </Col>
-                </Row> */}
+             
                 <Link className='aside-row aside-link mb-1 row' to='/html'>
                       <Col>HTML</Col>
                 </Link>

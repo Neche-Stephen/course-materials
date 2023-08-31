@@ -5,25 +5,28 @@
 .aside{
     color: white;
     height: 100vh;
+    font-family: Montserrat;
 }
 
 .aside-title{
     background-color: #FF9A9A !important;
     color: #2A2A2A;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 600;
 }
 
 .aside-row{
     padding-left: 30px;
     background: #D0FFBF;
-    height: 40px;
+    min-height: 40px;
     align-items: center;
 }
 
 .aside-link{
     text-decoration: none;
     color: #3936BC;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .aside-topic{
@@ -34,6 +37,9 @@
     width: 85%;
     border: unset;
     text-align: justify;
+    color: #2A2A2A;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .aside-topic:hover{

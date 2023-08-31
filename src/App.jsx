@@ -13,7 +13,7 @@ function App() {
   const handleShow = () => setShow(true);
   return (
    <>
-     <Navbar />
+     <Navbar  handleShow={handleShow}/>
      <div className='container-fluid'>
         <Row>
             <aside className = "col-3">

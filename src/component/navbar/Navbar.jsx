@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 import RAD5_LOGO from './images/rad5-logo.png';
@@ -9,28 +10,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Navbar({handleShow}) {
   return (
-
-  //   <nav className='container-fluid'>
-  //   <Row className='navbar-menu align-items-center'>
-  //       <img className='navbar-logo col-3 img-fluid' src={RAD5_LOGO} alt="" />
-  //       <i onClick={handleShow} class="bi bi-menu-button col-3"></i>
-  //       <div className='navbar-title d-flex justify-content-center col-6'>
-  //             <h1>RAD5 CONNEKT</h1>
-  //       </div>
-             
-  //     </Row>
-  // </nav>
     <nav className='container-fluid navbar-menu'>
     <Row className='navbar-row'>
         <Col className='navbar-logo' xs = '3'>
             <div className='d-flex align-items-center navbar-height'>
-                <img className='img-fluid' src={RAD5_LOGO} alt="" />
+                <Link to='/'><img className='img-fluid' src={RAD5_LOGO} alt="" /></Link>
             </div>
         
         </Col>
 
         <Col className="d-lg-none" xs = '1'>
-              <div className='d-flex align-items-center navbar-height'><i onClick={handleShow} className="bi bi-menu-button"></i></div>
+              <div className='d-flex align-items-center navbar-height'><button onClick={handleShow} className="bi bi-justify"></button></div>
         </Col>
 
         <Col xs = '6' lg ='9' className='p-0' >
