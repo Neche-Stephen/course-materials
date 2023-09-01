@@ -28,7 +28,7 @@ function Aside(props) {
     show, setShow, handleClose, handleShow
   } = props;
 
-  const handleCourseClick = (courseClicked)=>{
+const handleCourseClick = (courseClicked)=>{
     const updatedCoursesMode = {};
     for (const course in coursesMode) {
       updatedCoursesMode[course] = course === courseClicked;

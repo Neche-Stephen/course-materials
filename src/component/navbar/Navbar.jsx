@@ -8,14 +8,14 @@ import RAD5_LOGO from './images/rad5-logo.png';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-export default function Navbar({handleShow}) {
+export default function Navbar({handleShow, returnHome}) {
   return (
     <>
       <nav className='container-fluid navbar-menu'>
         <Row className='navbar-row'>
             <Col className='navbar-logo'xs = '5' sm = '3'>
                 <div className='d-flex align-items-center navbar-height'>
-                    <Link to='/'><img className='img-fluid' src={RAD5_LOGO} alt="" /></Link>
+                    <Link onClick = {returnHome} to='/'><img className='img-fluid' src={RAD5_LOGO} alt="" /></Link>
                 </div>
             </Col>
 

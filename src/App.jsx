@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 import Aside from './component/aside/Aside';
 import Navbar from './component/navbar/Navbar';
+import Home from './component/home/Home';
 
 import { jsTopics as defaultJsTopics } from './utils/topicsName';
 import { cssTopics as defaultCssTopics } from './utils/topicsName';
@@ -20,13 +21,13 @@ function App() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [component, setComponent] = useState();
+  const [component, setComponent] = useState(<Home />);
   const [ jsTopics, setJsTopics] = useState(defaultJsTopics);
   const [ cssTopics, setCssTopics] = useState(defaultCssTopics);
   const [ htmlTopics, setHtmlTopics] = useState(defaultHtmlTopics);
 
 
-  const toggleTopicClicked = (clickedTopicName) =>{
+const toggleTopicClicked = (clickedTopicName) =>{
     const updatedHtmlTopics = htmlTopics.map((topic) => ({
       ...topic,
       clicked: topic.topicName === clickedTopicName,
@@ -44,22 +45,17 @@ function App() {
       clicked: topic.topicName === clickedTopicName,
     }));
     setJsTopics(updatedJsTopics);
-    
-    // const updatedTopics = topics.map((topic) => ({
-    //   ...topic,
-    //   clicked: topic.topicName === clickedTopicName,
-    // }));
-    // setTopics(updatedTopics);
+
   }
 
-  const showJsTopic = (topicName) => {
+const showJsTopic = (topicName) => {
      const selectedComponent =  showJsTopicMethod(topicName);
      setComponent(selectedComponent);
      handleClose();
      toggleTopicClicked(topicName)
   }
 
-  const showCssTopic = (topicName) => {
+const showCssTopic = (topicName) => {
     const selectedComponent =  showCssTopicMethod(topicName);
     setComponent(selectedComponent);
     handleClose();
@@ -72,9 +68,14 @@ function App() {
   handleClose();
   toggleTopicClicked(topicName);
 }
+
+const returnHome = () =>{
+  setComponent(<Home />);
+  toggleTopicClicked(null);
+}
   return (
    <>
-     <Navbar  handleShow={handleShow}/>
+     <Navbar  handleShow={handleShow} returnHome = {returnHome}/>
      <div className='container-fluid'>
         <Row>
             <aside className = "col-3">
@@ -86,7 +87,6 @@ function App() {
             </aside>
            
           <main className='col-lg-9'>
-            Welcome
             {component}
           </main>
             
