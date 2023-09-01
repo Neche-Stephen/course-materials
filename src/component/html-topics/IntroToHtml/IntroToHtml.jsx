@@ -6,16 +6,16 @@ const topicDetails = {
   title : 'Introduction to Html',
   learningObjective : '',
   lectureMaterialLink : [
-      // {
-      //     materialName : 'Introduction to Javascript',
-      //     materialLink : "https://docs.google.com/document/d/18AP9H_O6Upr_CvkiNDW_goPLYIxcLi0Vb1hggtjKfOw/edit?usp=sharing",
-      // }
+      {
+          materialName : 'Introduction to Javascript',
+          materialLink : "https://docs.google.com/document/d/18AP9H_O6Upr_CvkiNDW_goPLYIxcLi0Vb1hggtjKfOw/edit?usp=sharing",
+      }
   ],
   ResourcesLink : [
-      // {
-      //     resourceLink : "https://javascript.info/variables",
-      //     resourceName : 'Variables'
-      // },
+      {
+          resourceLink : "https://javascript.info/variables",
+          resourceName : 'Variables'
+      },
       ]
 }
 
