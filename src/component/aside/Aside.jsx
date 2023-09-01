@@ -8,14 +8,35 @@ import { Link } from 'react-router-dom';
 import './Aside.css';
 
 
+const defaultCoursesMode = {
+  htmlClicked : false,
+  cssClicked : false,
+  jsClicked : false
+}
+
+
+
 function Aside(props) {
+  const [coursesMode, setCoursesMode] = useState(defaultCoursesMode);
+  const { htmlClicked, cssClicked, jsClicked} = coursesMode;
+
   const { 
+
     showHtmlTopic, htmlTopics,
     showCssTopic, cssTopics,
     showJsTopic,jsTopics,
-    show, setShow, handleClose, handleShow} = props;
+    show, setShow, handleClose, handleShow
+  } = props;
 
-    // const htmlTopics = [IntroToHtml, IntroToAttributes]
+  const handleCourseClick = (courseClicked)=>{
+    const updatedCoursesMode = {};
+    for (const course in coursesMode) {
+      updatedCoursesMode[course] = course === courseClicked;
+    }
+    // Update the state with the new object
+    setCoursesMode(updatedCoursesMode);
+  }
+
 
   return (
         <>
@@ -28,11 +49,9 @@ function Aside(props) {
                   </Col>
                 </Row>
              
-                <Link onClick={handleShow} className='aside-row aside-link mb-1 row' to='/html'>
-                      <Col>HTML</Col>
-                </Link>
+                <Row onClick = {() =>{handleCourseClick('htmlClicked')}} className='aside-row aside-link mb-1 row'>HTML</Row>
                 {
-                      htmlTopics &&  htmlTopics.map((htmlTopic, index) => {
+                     htmlClicked &&  htmlTopics.map((htmlTopic, index) => {
                         return (
                            <button key={index} style={{backgroundColor : htmlTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={htmlTopic.clicked} onClick={()=>{showHtmlTopic(htmlTopic.topicName)}}>
                            {htmlTopic.topicName}
@@ -41,12 +60,9 @@ function Aside(props) {
                         )
                        })
                   }
-
-                  <Link className='aside-row aside-link mb-1 row' to='/css'>
-                        <Col>CSS</Col>
-                  </Link>
+                  <Row onClick = {() =>{handleCourseClick('cssClicked')}} className='aside-row aside-link mb-1 row'>CSS</Row>
                 {
-                    cssTopics &&  cssTopics.map((cssTopic, index) => {
+                 cssClicked &&  cssTopics.map((cssTopic, index) => {
                       return (
                         <button key={index} style={{backgroundColor : cssTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={cssTopic.clicked} onClick={()=>{showCssTopic(cssTopic.topicName)}}>
                         {cssTopic.topicName}
@@ -55,11 +71,9 @@ function Aside(props) {
                       })
                 }
 
-                  <Link className='aside-row aside-link mb-1 row' to='/js'>
-                      <Col>JS</Col>
-                  </Link>
+                  <Row onClick = {() =>{handleCourseClick('jsClicked')}} className='aside-row aside-link mb-1 row'>JS</Row>
                 {
-                    jsTopics &&  jsTopics.map((jsTopic, index) => {
+                   jsClicked &&  jsTopics.map((jsTopic, index) => {
                       return (
                         <button key={index} style={{backgroundColor : jsTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={jsTopic.clicked} onClick={()=>{showJsTopic(jsTopic.topicName)}}>
                           {jsTopic.topicName}
@@ -67,6 +81,7 @@ function Aside(props) {
                       )
                       })
                 }
+
                </div>
           </Offcanvas>
             </>

@@ -67,9 +67,7 @@ function JsComponent() {
       setTopic(<DataTypes />);
       toggleTopicClicked(topicName);
 
-      }
-
-   
+      } 
   }
   return (
    <>

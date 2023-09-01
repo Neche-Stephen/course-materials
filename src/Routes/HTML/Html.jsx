@@ -24,10 +24,6 @@ const defaultHtmlTopics = [
       topicName : 'Introdution To Attributes',
       clicked : false
     },
-    // {
-    //   topicName : 'Introdution To Layout',
-    //   clicked : false
-    // },
 ];
 
 
