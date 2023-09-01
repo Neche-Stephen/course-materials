@@ -55,18 +55,21 @@ function App() {
   const showJsTopic = (topicName) => {
      const selectedComponent =  showJsTopicMethod(topicName);
      setComponent(selectedComponent);
+     handleClose();
      toggleTopicClicked(topicName)
   }
 
   const showCssTopic = (topicName) => {
     const selectedComponent =  showCssTopicMethod(topicName);
     setComponent(selectedComponent);
+    handleClose();
     toggleTopicClicked(topicName);
  }
 
  const showHtmlTopic = (topicName) => {
   const selectedComponent =  showHtmlTopicMethod(topicName);
   setComponent(selectedComponent);
+  handleClose();
   toggleTopicClicked(topicName);
 }
   return (
