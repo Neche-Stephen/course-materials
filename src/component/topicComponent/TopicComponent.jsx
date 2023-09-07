@@ -8,7 +8,7 @@ export default function TopicComponent( {topicDetails}) {
   return (
     <div className='topic_component'>
          <Container>
-            <Row className='mb-5'>
+            <Row className='mb-5 mt-3'>
                 <Col>
                     <h1>{title}</h1>
                 </Col>
