@@ -20,12 +20,12 @@ export const jsTopicsComponentsObject = {
 
 //CSS Topics Object
 export const cssTopicsComponentsObject = {
-  'Introduction to CSS': <IntroCss />,
+  'Intro to CSS': <IntroCss />,
   'Styling Text': <StylingText />
 };
 
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
-  "Introdution To HTML": <IntroToHtml />,
-  'Introdution To Attributes': <IntroToAttributes />
+  "Intro To HTML": <IntroToHtml />,
+  'Intro To Attributes': <IntroToAttributes />
 };

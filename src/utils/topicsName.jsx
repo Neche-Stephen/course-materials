@@ -15,7 +15,7 @@ export const jsTopics = [
 
 export const cssTopics = [
     {
-      topicName: 'Introduction to CSS',
+      topicName: 'Intro to CSS',
       clicked: false
     },
     {
@@ -26,11 +26,11 @@ export const cssTopics = [
 
 export const htmlTopics = [
   {
-    topicName : "Introdution To HTML",
+    topicName : "Intro To HTML",
     clicked : false
   },
   {
-    topicName : 'Introdution To Attributes',
+    topicName : 'Intro To Attributes',
     clicked : false
   },
 ];
