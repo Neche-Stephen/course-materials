@@ -42,7 +42,7 @@ const handleCourseClick = (courseClicked)=>{
         <>
           <Offcanvas className ="aside-offcanvas" show={show} onHide={handleClose} responsive="lg">
                <div className = "aside">
-                <Row style={{minHeight: '70px'}} className='aside-row aside-title mb-1'>
+                <Row style={{minHeight: '70px'}} className='aside-row aside-title mb-1 justify-content-center'>
                   <Col>
                      <i className="bi bi-book me-3"></i>
                      <span>COURSES</span>

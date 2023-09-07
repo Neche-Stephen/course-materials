@@ -13,15 +13,14 @@
     color: #2A2A2A;
     font-size: 23px;
     font-weight: 600;
+    padding-left: 30px;
 }
 
 .aside-row{
-    /* padding-left: 30px; */
     background: #D0FFBF;
     min-height: 40px;
     align-items: center;
     cursor: pointer;
-    
 }
 
 .aside-link{
@@ -73,13 +72,22 @@
 }
 
 
-@media (max-width:575px){
+@media (max-width:655px){
     .aside-offcanvas{
         width: 70% !important;
     }
 
     .aside-row{
-        width:104%;
+        width:102.5%;
+    }
+}
+
+@media (max-width:400px){
+    .aside-offcanvas{
+        width: 80% !important;
+    }
+    .aside-topic{
+        white-space: unset;
     }
 }
 
