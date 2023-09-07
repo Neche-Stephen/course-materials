@@ -13,9 +13,9 @@ import IntroToAttributes from "../component/html-topics/IntroToAttributes/IntroT
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
-    'Introduction to Programming': <IntroToProg />,
-    'Introduction to Javascript': <IntroToJs />,
-    'Introduction to Javascript Data types':< DataTypes />,
+    'Intro to Programming': <IntroToProg />,
+    'Intro to Javascript': <IntroToJs />,
+    'Intro to JS Data types':< DataTypes />,
   };
 
 //CSS Topics Object

@@ -1,14 +1,14 @@
 export const jsTopics = [
     {
-      topicName: 'Introduction to Programming',
+      topicName: 'Intro to Programming',
       clicked: false
     },
     {
-      topicName: 'Introduction to Javascript',
+      topicName: 'Intro to Javascript',
       clicked: false
     },
     {
-      topicName: 'Introduction to Javascript Data types',
+      topicName: 'Intro to JS Data types',
       clicked: false
     }
   ]

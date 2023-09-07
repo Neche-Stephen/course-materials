@@ -49,7 +49,7 @@ const handleCourseClick = (courseClicked)=>{
                   </Col>
                 </Row>
              
-                <Row onClick = {() =>{handleCourseClick('htmlClicked')}} className='aside-row aside-link mb-1 row'>HTML</Row>
+                <Row onClick = {() =>{handleCourseClick('htmlClicked')}} className='aside-row aside-link mb-1 row justify-content-center'><Col xs = '8'>HTML</Col></Row>
                 {
                      htmlClicked &&  htmlTopics.map((htmlTopic, index) => {
                         return (
@@ -60,7 +60,7 @@ const handleCourseClick = (courseClicked)=>{
                         )
                        })
                   }
-                  <Row onClick = {() =>{handleCourseClick('cssClicked')}} className='aside-row aside-link mb-1 row'>CSS</Row>
+                  <Row onClick = {() =>{handleCourseClick('cssClicked')}} className='aside-row aside-link mb-1 row justify-content-center'><Col xs = '8'>CSS</Col></Row>
                 {
                  cssClicked &&  cssTopics.map((cssTopic, index) => {
                       return (
@@ -71,7 +71,7 @@ const handleCourseClick = (courseClicked)=>{
                       })
                 }
 
-                  <Row onClick = {() =>{handleCourseClick('jsClicked')}} className='aside-row aside-link mb-1 row'>JS</Row>
+                  <Row onClick = {() =>{handleCourseClick('jsClicked')}} className='aside-row aside-link mb-1 row justify-content-center'><Col xs = '8'>JS</Col></Row>
                 {
                    jsClicked &&  jsTopics.map((jsTopic, index) => {
                       return (

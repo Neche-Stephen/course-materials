@@ -5,7 +5,7 @@
 .aside{
     color: white;
     min-height: 100vh;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 .aside-title{
@@ -16,11 +16,12 @@
 }
 
 .aside-row{
-    padding-left: 30px;
+    /* padding-left: 30px; */
     background: #D0FFBF;
     min-height: 40px;
     align-items: center;
     cursor: pointer;
+    
 }
 
 .aside-link{
@@ -28,6 +29,7 @@
     color: #3936BC;
     font-size: 20px;
     font-weight: 500;
+    /* text-align: center; */
 }
 
 .aside-topic{
@@ -37,7 +39,8 @@
     align-items: center;
     width: 85%;
     border: unset;
-    text-align: justify;
+    /* text-align: justify;
+    text-align: center; */
     color: #2A2A2A;
     font-size: 17px;
     font-weight: 500;
@@ -64,12 +67,15 @@
     .aside-row{
         width:103%;
     }
+    .aside-topic{
+        white-space: nowrap;
+    }
 }
 
 
 @media (max-width:575px){
     .aside-offcanvas{
-        width: 50% !important;
+        width: 70% !important;
     }
 
     .aside-row{
