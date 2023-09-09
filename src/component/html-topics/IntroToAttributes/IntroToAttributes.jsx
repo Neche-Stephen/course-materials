@@ -22,7 +22,8 @@ const topicDetails = {
 export default function IntroToAttributes() {
   return (
     <div>
-      <TopicComponent topicDetails={topicDetails}/>
+      {/* <TopicComponent topicDetails={topicDetails}/> */}
+      No Lecture Material Available for this topic
     </div>
   )
 }

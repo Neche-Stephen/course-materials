@@ -12,21 +12,29 @@ const topicDetails = {
             {
                 materialName : 'Introduction to Javascript',
                 materialLink : "https://docs.google.com/document/d/18AP9H_O6Upr_CvkiNDW_goPLYIxcLi0Vb1hggtjKfOw/edit?usp=sharing",
+                materialInfo : null
             }
         ],
         ResourcesLink : [
             {
                 resourceLink : "https://javascript.info/variables",
-                resourceName : 'Variables'
+                resourceName : 'Variables',
+                resourceInfo : 'Attempt the tasks at the end of this Resource.'
             },
             ]
+}
+
+const topicAssessments = {
+    exercise : 'https://docs.google.com/document/d/11LEdSzW4gOnp353BExwh2EItUbhTPgh5LClua-vvLyI/edit?usp=sharing',
+    classwork : 'https://docs.google.com/document/d/1RvrU8_SWsXUPTU244IN8JNRgkIVP8k7IQmlO9cOGdng/edit?usp=sharing',
+    homework : 'https://docs.google.com/document/d/1Y0aD5ozUEC72OgoHnoJ9LE0WNsdB8Xa15o1iV4Qpks0/edit?usp=sharing'
 }
 
 export default function IntroToJs() {
   
   return (
     <div>
-        <TopicComponent topicDetails = {topicDetails} />
+        <TopicComponent topicDetails = {topicDetails} topicAssessments = {topicAssessments} />
 
     </div>
   )

@@ -3,8 +3,9 @@ import { Container, Row,Col } from 'react-bootstrap';
 
 import './TopicComponent.css'
 
-export default function TopicComponent( {topicDetails}) {
+export default function TopicComponent( {topicDetails, topicAssessments}) {
     const {title, learningObjective, lectureMaterialLink, ResourcesLink} = topicDetails;
+    const {exercise, classwork, homework} = topicAssessments;
   return (
     <div className='topic_component'>
          <Container>
@@ -26,16 +27,25 @@ export default function TopicComponent( {topicDetails}) {
                     </ul>
                 </Col>
 
-                <Col>
+                <Col xs = '12'>
                     <h4>Resources</h4>
                     <ul>
                         {
                             ResourcesLink.map((resource, index) =>{
-                                return <li key={index}><a href={resource.resourceLink} target='_blank' rel="noreferrer">{resource.resourceName}</a></li>
+                                return <li key={index}><a href={resource.resourceLink} target='_blank' rel="noreferrer">{resource.resourceName}</a> ({resource.resourceInfo})</li>
                             })
                         }
                     </ul>
                     
+                </Col>
+
+                <Col xs = '12'>
+                    <h4>Assessment</h4>
+                    <ul>
+                        {exercise && <li><a href={exercise} target='_blank'  rel="noreferrer">Exercise with Solution</a></li>}
+                        {classwork &&  <li><a href={classwork} target='_blank' rel="noreferrer">Classwork</a></li>}
+                        {homework &&   <li><a href={homework} target='_blank'  rel="noreferrer">Homework</a></li>}
+                    </ul>
                 </Col>
 
               
