@@ -10,6 +10,10 @@ export const jsTopics = [
     {
       topicName: 'Intro to JS Data types',
       clicked: false
+    },
+    {
+      topicName: 'JS Operators',
+      clicked: false
     }
   ]
 
