@@ -14,6 +14,10 @@ export const jsTopics = [
     {
       topicName: 'JS Operators',
       clicked: false
+    },
+    {
+      topicName: 'Conditional Statements',
+      clicked: false
     }
   ]
 
