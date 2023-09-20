@@ -3,9 +3,14 @@ import { Container, Row,Col } from 'react-bootstrap';
 
 import './TopicComponent.css'
 
-export default function TopicComponent( {topicDetails, topicAssessments}) {
+export default function TopicComponent( {topicDetails, topicAssessments, topicAssessmentsCorrections}) {
     const {title, learningObjective, lectureMaterialLink, ResourcesLink} = topicDetails;
     const {exercise, classwork, homework} = topicAssessments;
+
+    let classworkCorrection; let homeworkCorrection;
+    if(topicAssessmentsCorrections){
+        ({ classworkCorrection, homeworkCorrection} = topicAssessmentsCorrections);
+    }
   return (
     <div className='topic_component'>
          <Container>
@@ -45,6 +50,14 @@ export default function TopicComponent( {topicDetails, topicAssessments}) {
                         {exercise && <li><a href={exercise} target='_blank'  rel="noreferrer">Exercise with Solution</a></li>}
                         {classwork &&  <li><a href={classwork} target='_blank' rel="noreferrer">Classwork</a></li>}
                         {homework &&   <li><a href={homework} target='_blank'  rel="noreferrer">Homework</a></li>}
+                    </ul>
+                </Col>
+
+                <Col xs = '12'>
+                    <h4>Assessment Correction</h4>
+                    <ul>
+                        {classworkCorrection &&  <li><a href={classworkCorrection} target='_blank' rel="noreferrer">Classwork Correction</a></li>}
+                        {homeworkCorrection &&  <li><a href={homeworkCorrection} target='_blank'  rel="noreferrer">Homework Correction</a></li>}
                     </ul>
                 </Col>
 
