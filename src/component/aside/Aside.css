@@ -72,7 +72,7 @@
 }
 
 
-@media (max-width:655px){
+@media (max-width:725px){
     .aside-offcanvas{
         width: 70% !important;
     }
