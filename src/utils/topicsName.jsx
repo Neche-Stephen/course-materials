@@ -18,6 +18,10 @@ export const jsTopics = [
     {
       topicName: 'Conditional Statements',
       clicked: false
+    },
+    {
+      topicName: 'JS Loops',
+      clicked: false
     }
   ]
 
