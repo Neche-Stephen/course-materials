@@ -4,12 +4,12 @@ import React from 'react';
 import TopicComponent from '../../topicComponent/TopicComponent';
 
 const topicDetails = {
-  title : 'JS Loops',
+  title : 'JS Functions',
   learningObjective : '',
   lectureMaterialLink : [
       {
-          materialName : 'Javascript Loops',
-          materialLink : "https://docs.google.com/document/d/18XVAYghOMJt4QkFbDhmQ2Ld6WXfJr7OrEu8I5lLngJM/edit?usp=sharing",
+          materialName : 'Javascript Functions',
+          materialLink : "https://docs.google.com/document/d/1iv5gFtXjQxfg34mZJM0VHvN0Zkl6iu5QgLJaCn_FAA8/edit?usp=sharing",
       },
   ],
   ResourcesLink : [
@@ -22,13 +22,13 @@ const topicDetails = {
 }
 
 const topicAssessments = {
-  exercise : 'https://docs.google.com/document/d/17NUWeXRkiHHSzaAq7FFgnLosfbNcQFWg8Mb6AgeKcOQ/edit?usp=sharing',
-  classwork : 'https://docs.google.com/document/d/19eNvtiKSr9PRC2z8aN-42fnXoXoi_C_MHp5j2yA0z7A/edit?usp=sharing',
-  homework : 'https://docs.google.com/document/d/1K2hOUUGP7aHsUOcCsw6Rs00W6_kXQPaAovwJZOYsVps/edit?usp=sharing'
+  exercise : 'https://docs.google.com/document/d/1SzuVwMh4HOYbS8GdLW_x96HKRlxWTXuLMQIFMIKPIRo/edit?usp=sharing',
+  classwork : 'https://docs.google.com/document/d/1_a2YR-EHJeL4-5jTbFf4qr2WHuMQIhZB_tg6rngGs54/edit?usp=sharing',
+  homework : 'https://docs.google.com/document/d/1vcj4OGO1--P1_hLWufpK_Dhirnu-yVql8BPfmPWlsE0/edit?usp=sharing'
 }
 
 
-export default function Loops() {
+export default function Functions() {
   return (
     <div>
           <TopicComponent topicDetails = {topicDetails} topicAssessments = {topicAssessments} 

@@ -5,6 +5,7 @@ import DataTypes from "../component/jsTopics/DataTypes/DataTypes";
 import JsOperators from "../component/jsTopics/jsOperators/JsOperators";
 import CondStatements from "../component/jsTopics/conditionalStatements/CondStatements";
 import Loops from "../component/jsTopics/loops/Loops";
+import Functions from "../component/jsTopics/jsFunctions/JsFunctions";
 
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
@@ -21,7 +22,8 @@ export const jsTopicsComponentsObject = {
     'Intro to JS Data types':< DataTypes />,
     'JS Operators' : <JsOperators />,
     'Conditional Statements' : <CondStatements />,
-    'JS Loops' : <Loops />
+    'JS Loops' : <Loops />,
+    'JS Functions': <Functions />
   };
 
 //CSS Topics Object

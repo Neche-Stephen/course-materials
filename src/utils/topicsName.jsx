@@ -22,7 +22,11 @@ export const jsTopics = [
     {
       topicName: 'JS Loops',
       clicked: false
-    }
+    },
+    {
+      topicName : 'JS Functions',
+      clicked : false
+    },
   ]
 
 export const cssTopics = [
