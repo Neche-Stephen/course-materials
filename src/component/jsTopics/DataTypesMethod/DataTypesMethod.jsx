@@ -22,9 +22,9 @@ const topicDetails = {
 }
 
 const topicAssessments = {
-  exercise : 'https://docs.google.com/document/d/1SzuVwMh4HOYbS8GdLW_x96HKRlxWTXuLMQIFMIKPIRo/edit?usp=sharing',
-  classwork : 'https://docs.google.com/document/d/1_a2YR-EHJeL4-5jTbFf4qr2WHuMQIhZB_tg6rngGs54/edit?usp=sharing',
-  homework : 'https://docs.google.com/document/d/1vcj4OGO1--P1_hLWufpK_Dhirnu-yVql8BPfmPWlsE0/edit?usp=sharing'
+  exercise : 'https://docs.google.com/document/d/1C1o6Vi_7G-8erj45DziQshfewVAvo3VeriNwMOL_sIE/edit?usp=sharing',
+  classwork : 'https://docs.google.com/document/d/1GdVRpkCkpE3OR9kj8l2iaucexi40l7TEgAl0dehJDdk/edit?usp=sharing',
+  homework : 'https://docs.google.com/document/d/1riMIjlKwts1g3M0rRkfeKzD0HbhIkpfLjlnDRgvxwUo/edit?usp=sharing'
 }
 
 
