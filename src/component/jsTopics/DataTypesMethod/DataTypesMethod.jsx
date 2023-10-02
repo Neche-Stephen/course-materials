@@ -4,17 +4,13 @@ import React from 'react';
 import TopicComponent from '../../topicComponent/TopicComponent';
 
 const topicDetails = {
-  title : 'JS Functions',
+  title : 'Data Type Methods',
   learningObjective : '',
   lectureMaterialLink : [
       {
-          materialName : 'Javascript Functions',
-          materialLink : "https://docs.google.com/document/d/1iv5gFtXjQxfg34mZJM0VHvN0Zkl6iu5QgLJaCn_FAA8/edit?usp=sharing",
+          materialName : 'Data Type Methods',
+          materialLink : "https://docs.google.com/document/d/1WXWnmrO-Bxykue-OEZbSFKzomxJrW7-suciOqXkTkgU/edit?usp=sharing",
       },
-      {
-        materialName : 'Arrow Functions',
-        materialLink : "https://docs.google.com/document/d/1reKJLelMCzcpKmMiFx2Q2LA5m83Fty94zMybLbkfL2M/edit?usp=sharing",
-    },
   ],
   ResourcesLink : [
       // {
@@ -32,7 +28,7 @@ const topicAssessments = {
 }
 
 
-export default function Functions() {
+export default function DataTypesMethods() {
   return (
     <div>
           <TopicComponent topicDetails = {topicDetails} topicAssessments = {topicAssessments} 

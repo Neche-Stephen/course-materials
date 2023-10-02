@@ -6,6 +6,7 @@ import JsOperators from "../component/jsTopics/jsOperators/JsOperators";
 import CondStatements from "../component/jsTopics/conditionalStatements/CondStatements";
 import Loops from "../component/jsTopics/loops/Loops";
 import Functions from "../component/jsTopics/jsFunctions/JsFunctions";
+import DataTypesMethods from "../component/jsTopics/DataTypesMethod/DataTypesMethod";
 
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
@@ -23,7 +24,8 @@ export const jsTopicsComponentsObject = {
     'JS Operators' : <JsOperators />,
     'Conditional Statements' : <CondStatements />,
     'JS Loops' : <Loops />,
-    'JS Functions': <Functions />
+    'JS Functions': <Functions />,
+    'Data Type Methods' : <DataTypesMethods />
   };
 
 //CSS Topics Object

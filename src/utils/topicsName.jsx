@@ -27,6 +27,10 @@ export const jsTopics = [
       topicName : 'JS Functions',
       clicked : false
     },
+    {
+      topicName : 'Data Type Methods',
+      clicked : false
+    },
   ]
 
 export const cssTopics = [
