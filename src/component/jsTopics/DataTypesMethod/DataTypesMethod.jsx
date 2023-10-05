@@ -8,9 +8,13 @@ const topicDetails = {
   learningObjective : '',
   lectureMaterialLink : [
       {
-          materialName : 'Data Type Methods',
+          materialName : 'Data Type Methods - Strings, Numbers',
           materialLink : "https://docs.google.com/document/d/1WXWnmrO-Bxykue-OEZbSFKzomxJrW7-suciOqXkTkgU/edit?usp=sharing",
       },
+      {
+        materialName : 'Data Type Methods - Arrays, Objects',
+        materialLink : "https://docs.google.com/document/d/11Ck5KPtW87IZ0lC6wQEUjKILC6jbRdHHVqkDZb9oVbo/edit?usp=sharing",
+    },
   ],
   ResourcesLink : [
       // {

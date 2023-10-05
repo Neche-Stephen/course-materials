@@ -10,7 +10,11 @@ const topicDetails = {
       {
           materialName : 'Data Types',
           materialLink : "https://docs.google.com/document/d/1cEKdEdeKQhaBdYijX-nF05x8q975Xt0eFSydAZnZ3Xc/edit?usp=sharing",
-      }
+      },
+      {
+        materialName : 'Adding, Modifying and Removing Array and Object Elements',
+        materialLink : "https://docs.google.com/document/d/1aN0S80L9Fe9whWzC9JouwA9K1-x-l1DugefqBs4evDg/edit?usp=sharing",
+    }
   ],
   ResourcesLink : [
       // {
