@@ -7,6 +7,7 @@ import CondStatements from "../component/jsTopics/conditionalStatements/CondStat
 import Loops from "../component/jsTopics/loops/Loops";
 import Functions from "../component/jsTopics/jsFunctions/JsFunctions";
 import DataTypesMethods from "../component/jsTopics/DataTypesMethod/DataTypesMethod";
+import JsIteration1 from "../component/jsTopics/jsIteration/JsIteration";
 
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
@@ -25,7 +26,8 @@ export const jsTopicsComponentsObject = {
     'Conditional Statements' : <CondStatements />,
     'JS Loops' : <Loops />,
     'JS Functions': <Functions />,
-    'Data Type Methods' : <DataTypesMethods />
+    'Data Type Methods' : <DataTypesMethods />,
+    'JS Iteration 1' : <JsIteration1 />
   };
 
 //CSS Topics Object

@@ -31,6 +31,10 @@ export const jsTopics = [
       topicName : 'Data Type Methods',
       clicked : false
     },
+    {
+      topicName : 'JS Iteration 1',
+      clicked : false
+    },
   ]
 
 export const cssTopics = [
