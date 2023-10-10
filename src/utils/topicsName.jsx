@@ -35,6 +35,10 @@ export const jsTopics = [
       topicName : 'JS Iteration 1',
       clicked : false
     },
+    {
+      topicName : 'JS Iteration 2',
+      clicked : false
+    },
   ]
 
 export const cssTopics = [
