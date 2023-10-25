@@ -9,6 +9,7 @@ import Functions from "../component/jsTopics/jsFunctions/JsFunctions";
 import DataTypesMethods from "../component/jsTopics/DataTypesMethod/DataTypesMethod";
 import JsIteration1 from "../component/jsTopics/jsIteration/JsIteration";
 import JsIteration2 from "../component/jsTopics/jsIteration2/JsIteration2";
+import JsDOM1 from "../component/jsTopics/DOM/DOM1";
 
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
@@ -30,6 +31,7 @@ export const jsTopicsComponentsObject = {
     'Data Type Methods' : <DataTypesMethods />,
     'JS Iteration 1' : <JsIteration1 />,
     'JS Iteration 2' : <JsIteration2 />,
+    'JS DOM 1' : <JsDOM1 />
   };
 
 //CSS Topics Object
