@@ -14,7 +14,7 @@ import JsDOM2 from "../component/jsTopics/DOM/DOM2";
 
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
-import StylingText from "../component/css-topics/StylingText/stylingText";
+import StylingText from "../component/css-topics/StylingText/stylingText"; 
 
 //HTML Topics
 import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
