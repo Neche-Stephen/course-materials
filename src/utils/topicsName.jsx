@@ -43,6 +43,10 @@ export const jsTopics = [
       topicName : 'JS DOM 1',
       clicked : false
     },
+    {
+      topicName : 'JS DOM 2',
+      clicked : false
+    },
   ]
 
 export const cssTopics = [
