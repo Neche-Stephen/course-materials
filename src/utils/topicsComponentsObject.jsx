@@ -17,8 +17,8 @@ import IntroCss from "../component/css-topics/IntroCss/Intro-css";
 import StylingText from "../component/css-topics/StylingText/stylingText"; 
 
 //HTML Topics
-import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
-import IntroToAttributes from "../component/html-topics/IntroToAttributes/IntroToAttributes";
+// import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
+import IntroToHTML from "../component/html-topics/IntroToHTML/IntroToHTML";
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
@@ -44,6 +44,6 @@ export const cssTopicsComponentsObject = {
 
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
-  "Intro To HTML": <IntroToHtml />,
-  'Intro To Attributes': <IntroToAttributes />
+  "Intro To HTML": <IntroToHTML />,
+  // 'Intro To Attributes': <IntroToAttributes />
 };

@@ -17,9 +17,9 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element = {<App/>}/>
-          <Route path='/html' element = {<HtmlComponent/>}/>
+          {/* <Route path='/html' element = {<HtmlComponent/>}/>
           <Route path='/css' element = {<CssComponent/>}/>
-          <Route path='/js' element = {<JsComponent/>}/>
+          <Route path='/js' element = {<JsComponent/>}/> */}
         </Routes>
       </BrowserRouter>
   </React.StrictMode>

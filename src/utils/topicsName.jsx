@@ -64,9 +64,5 @@ export const htmlTopics = [
   {
     topicName : "Intro To HTML",
     clicked : false
-  },
-  {
-    topicName : 'Intro To Attributes',
-    clicked : false
-  },
+  }
 ];

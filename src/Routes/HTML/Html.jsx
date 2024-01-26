@@ -11,8 +11,8 @@ import Navbar from '../../component/navbar/Navbar';
 
 
 // Topics Component
-import IntroToAttributes from '../../component/html-topics/IntroToAttributes/IntroToAttributes';
-import IntroToHtml from '../../component/html-topics/IntroToHtml/IntroToHtml';
+// import IntroToAttributes from '../../component/html-topics/IntroToHTML/IntroToHTML';
+import IntroToHtml from '../../component/html-topics/IntroToHTML/IntroToHTML';
 
 // Topics
 const defaultHtmlTopics = [
@@ -53,7 +53,7 @@ function HtmlComponent() {
     toggleTopicClicked(topicName);
     }
     else if (topicName === 'Introdution To Attributes'){
-      setTopic(<IntroToAttributes />);
+      // setTopic(<IntroToAttributes />);
     toggleTopicClicked(topicName);
 
       }
