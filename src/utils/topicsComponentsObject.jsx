@@ -18,7 +18,7 @@ import StylingText from "../component/css-topics/StylingText/stylingText";
 
 //HTML Topics
 // import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
-import IntroToHTML from "../component/html-topics/IntroToHTML/IntroToHTML";
+import IntroToHTML from "../component/html-topics/IntroToHTML/IntroToHTML"
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
