@@ -20,7 +20,8 @@ import StylingText from "../component/css-topics/StylingText/stylingText";
 //HTML Topics
 // import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
 // import IntroToHTML from "../component/html-topics/IntroToHTML/IntroToHTML";
-import IntroHTML from "../component/html-topics/IntroToHTML/IntroHTML";
+// import IntroHTML from "../component/html-topics/IntroToHTML/IntroHTML";
+import IntroHTML from "../component/html-topics/IntroHTML/IntroHTML";
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
@@ -46,6 +47,6 @@ export const cssTopicsComponentsObject = {
 
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
-  "Intro To HTML": <IntroToHTML />,
+  "Intro To HTML": <IntroHTML />,
   // 'Intro To Attributes': <IntroToAttributes />
 };
