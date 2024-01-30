@@ -12,7 +12,7 @@
 
 // // Topics Component
 // // import IntroToAttributes from '../../component/html-topics/IntroToHTML/IntroToHTML';
-// import IntroToHtml from '../../component/html-topics/IntroToHTML/IntroToHTML';
+// // import IntroToHtml from '../../component/html-topics/IntroToHTML/IntroToHTML';
 
 // // Topics
 // const defaultHtmlTopics = [
@@ -33,7 +33,7 @@
 //   const handleClose = () => setShow(false);
 //   const handleShow = () => setShow(true);
 
-//   const [topic, setTopic] = useState(<IntroToHtml/>);
+// //   const [topic, setTopic] = useState(<IntroToHtml/>);
 
 //   const toggleTopicClicked = (clickedTopicName) =>{
 //           const updatedTopics = htmlTopics.map((topic) => ({
@@ -49,7 +49,7 @@
 //   const showHtmlTopic = (topicName)=>{
 //     console.log('clicked')
 //     if (topicName === 'Introdution To HTML'){
-//     setTopic(<IntroToHtml />);
+//     // setTopic(<IntroToHtml />);
 //     toggleTopicClicked(topicName);
 //     }
 //     else if (topicName === 'Introdution To Attributes'){
@@ -73,7 +73,7 @@
 //           </aside>
            
 //           <main className='col-lg-9'>
-//              {topic}
+//              {/* {topic} */}
 //           </main>
             
 //         </Row>

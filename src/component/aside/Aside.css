@@ -7,6 +7,11 @@
     min-height: 100vh;
     font-family: Montserrat, sans-serif;
 }
+@media(min-width:992px){
+    aside{
+        background: #3936BC;
+    }
+}
 
 .aside-title{
     background-color: #FF9A9A !important;
