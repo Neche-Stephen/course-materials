@@ -3,7 +3,7 @@ import React from 'react';
 import TopicComponent from '../../topicComponent/TopicComponent';
 
 const topicDetails = {
-  title : 'Introduction to Attributes',
+  title : 'Introduction to HTML',
   learningObjective : '',
   lectureMaterialLink : [
       {

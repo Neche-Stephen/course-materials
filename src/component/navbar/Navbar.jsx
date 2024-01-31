@@ -25,7 +25,7 @@ export default function Navbar({handleShow, returnHome}) {
 
             <Col   xs = '5' sm ='6' lg ='9' className='' >
                     <div className='navbar-title navbar-height d-flex justify-content-center align-items-center'>
-                          <h1 style={{whiteSpace:'nowrap'}}> <span className='d-none d-sm-inline'>RAD5 </span>StudySphere</h1>
+                          <h1 style={{whiteSpace:'nowrap'}}> <span className='d-none d-sm-inline'>Course </span>Materials</h1>
                     </div>
             </Col>
             
