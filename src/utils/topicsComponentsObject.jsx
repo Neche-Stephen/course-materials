@@ -18,10 +18,8 @@ import IntroCss from "../component/css-topics/IntroCss/Intro-css";
 import StylingText from "../component/css-topics/StylingText/stylingText"; 
 
 //HTML Topics
-// import IntroToHtml from "../component/html-topics/IntroToHtml/IntroToHtml";
-// import IntroToHTML from "../component/html-topics/IntroToHTML/IntroToHTML";
-// import IntroHTML from "../component/html-topics/IntroToHTML/IntroHTML";
 import IntroHTML from "../component/html-topics/IntroHTML/IntroHTML";
+import HtmlElements from "../component/html-topics/HtmlElements/HtmlElements";
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
@@ -48,5 +46,5 @@ export const cssTopicsComponentsObject = {
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
   "Intro To HTML": <IntroHTML />,
-  // 'Intro To Attributes': <IntroToAttributes />
+  'HTML Elements': <HtmlElements />
 };
