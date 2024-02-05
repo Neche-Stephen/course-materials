@@ -10,7 +10,6 @@ import DataTypesMethods from "../component/jsTopics/DataTypesMethod/DataTypesMet
 import JsIteration1 from "../component/jsTopics/jsIteration/JsIteration";
 import JsIteration2 from "../component/jsTopics/jsIteration2/JsIteration2";
 import JsDOM1 from "../component/jsTopics/DOM/DOM1";
-// import JsDOM2 from "../component/jsTopics/DOM/DOM2";
 import JsDOM2 from "../component/jsTopics/DOM/DOMSecond";
 
 // CSS Topics
@@ -20,6 +19,10 @@ import StylingText from "../component/css-topics/StylingText/stylingText";
 //HTML Topics
 import IntroHTML from "../component/html-topics/IntroHTML/IntroHTML";
 import HtmlElements from "../component/html-topics/HtmlElements/HtmlElements";
+import Table_Form from "../component/html-topics/Table_Form/Table_Form";
+
+//Extra Topics
+import Git_Github from "../component/extraTopics/git_github/Git_Github";
 
 //JS Topics Object
 export const jsTopicsComponentsObject = {
@@ -46,5 +49,11 @@ export const cssTopicsComponentsObject = {
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
   "Intro To HTML": <IntroHTML />,
-  'HTML Elements': <HtmlElements />
+  'HTML Elements': <HtmlElements />,
+  "Tables/Forms" : <Table_Form />
 };
+
+// Extras Topics Object
+export  const extraTopicsComponentsObject =  {
+    "Git/Github" : <Git_Github />
+}

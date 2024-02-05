@@ -11,20 +11,22 @@ import './Aside.css';
 const defaultCoursesMode = {
   htmlClicked : false,
   cssClicked : false,
-  jsClicked : false
+  jsClicked : false,
+  extraClicked: false
 }
 
 
 
 function Aside(props) {
   const [coursesMode, setCoursesMode] = useState(defaultCoursesMode);
-  const { htmlClicked, cssClicked, jsClicked} = coursesMode;
+  const { htmlClicked, cssClicked, jsClicked, extraClicked} = coursesMode;
 
   const { 
 
     showHtmlTopic, htmlTopics,
     showCssTopic, cssTopics,
     showJsTopic,jsTopics,
+    showExtraTopic, extraTopics,
     show, setShow, handleClose, handleShow
   } = props;
 
@@ -77,6 +79,17 @@ const handleCourseClick = (courseClicked)=>{
                       return (
                         <button key={index} style={{backgroundColor : jsTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={jsTopic.clicked} onClick={()=>{showJsTopic(jsTopic.topicName)}}>
                           {jsTopic.topicName}
+                       </button>
+                      )
+                      })
+                }
+
+                <Row onClick = {() =>{handleCourseClick('extraClicked')}} className='aside-row aside-link mb-1 row justify-content-center'><Col xs = '8'>Extras</Col></Row>
+                {
+                   extraClicked &&  extraTopics.map((extraTopic, index) => {
+                      return (
+                        <button key={index} style={{backgroundColor : extraTopic.clicked ? '#AAAAAA' : '#FF9A9A'}}  className='row aside-topic mb-1 text-white' disabled={extraTopic.clicked} onClick={()=>{showExtraTopic(extraTopic.topicName)}}>
+                          {extraTopic.topicName}
                        </button>
                       )
                       })

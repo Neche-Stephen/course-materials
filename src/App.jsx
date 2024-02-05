@@ -11,8 +11,9 @@ import Home from './component/home/Home';
 import { jsTopics as defaultJsTopics } from './utils/topicsName';
 import { cssTopics as defaultCssTopics } from './utils/topicsName';
 import { htmlTopics as defaultHtmlTopics } from './utils/topicsName';
+import { extraTopics as defaultExtraTopics } from './utils/topicsName';
 
-import { showHtmlTopicMethod, showJsTopicMethod, showCssTopicMethod } from './utils/showTopicsMethods';
+import { showHtmlTopicMethod, showJsTopicMethod, showCssTopicMethod, showExtraTopicMethod } from './utils/showTopicsMethods';
 
 
 
@@ -25,6 +26,8 @@ function App() {
   const [ jsTopics, setJsTopics] = useState(defaultJsTopics);
   const [ cssTopics, setCssTopics] = useState(defaultCssTopics);
   const [ htmlTopics, setHtmlTopics] = useState(defaultHtmlTopics);
+  const [ extraTopics, setExtraTopics] = useState(defaultExtraTopics);
+
 
 
 const toggleTopicClicked = (clickedTopicName) =>{
@@ -69,6 +72,13 @@ const showCssTopic = (topicName) => {
   toggleTopicClicked(topicName);
 }
 
+const showExtraTopic = (topicName) => {
+  const selectedComponent =  showExtraTopicMethod(topicName);
+  setComponent(selectedComponent);
+  handleClose();
+  toggleTopicClicked(topicName);
+}
+
 const returnHome = () =>{
   setComponent(<Home />);
   toggleTopicClicked(null);
@@ -83,6 +93,7 @@ const returnHome = () =>{
               jsTopics = {jsTopics} showJsTopic = {showJsTopic}
               cssTopics = {cssTopics} showCssTopic = {showCssTopic}
               htmlTopics = {htmlTopics} showHtmlTopic = {showHtmlTopic}
+              extraTopics = {extraTopics} showExtraTopic = {showExtraTopic}
               show = {show} setShow ={setShow} handleShow = {handleShow} handleClose = {handleClose} />
             </aside>
            

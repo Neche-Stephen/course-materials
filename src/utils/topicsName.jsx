@@ -68,5 +68,16 @@ export const htmlTopics = [
   {
     topicName : "HTML Elements",
     clicked : false
+  },
+  {
+    topicName : "Tables/Forms",
+    clicked : false
+  }
+];
+
+export const extraTopics = [
+  {
+    topicName : "Git/Github",
+    clicked : false
   }
 ];
