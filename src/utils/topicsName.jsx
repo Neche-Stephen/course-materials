@@ -57,6 +57,10 @@ export const cssTopics = [
     {
       topicName: 'Styling Text',
       clicked: false
+    },
+    {
+      topicName: 'Background',
+      clicked: false
     }
   ];
 

@@ -15,6 +15,7 @@ import JsDOM2 from "../component/jsTopics/DOM/DOMSecond";
 // CSS Topics
 import IntroCss from "../component/css-topics/IntroCss/Intro-css";
 import StylingText from "../component/css-topics/StylingText/stylingText"; 
+import Background from "../component/css-topics/background/Background";
 
 //HTML Topics
 import IntroHTML from "../component/html-topics/IntroHTML/IntroHTML";
@@ -43,14 +44,15 @@ export const jsTopicsComponentsObject = {
 //CSS Topics Object
 export const cssTopicsComponentsObject = {
   'Intro to CSS': <IntroCss />,
-  'Styling Text': <StylingText />
+  'Styling Text': <StylingText />,
+  "Background" : <Background />
 };
 
 // HTML Topics Object
 export const htmlTopicsComponentsObject = {
   "Intro To HTML": <IntroHTML />,
   'HTML Elements': <HtmlElements />,
-  "Tables/Forms" : <Table_Form />
+  "Tables/Forms" : <Table_Form />,
 };
 
 // Extras Topics Object
