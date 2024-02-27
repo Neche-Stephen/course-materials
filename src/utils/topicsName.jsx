@@ -54,16 +54,20 @@ export const cssTopics = [
       topicName: 'Intro to CSS',
       clicked: false
     },
-    {
-      topicName: 'Styling Text',
-      clicked: false
-    },
+    // {
+    //   topicName: 'Styling Text',
+    //   clicked: false
+    // },
     {
       topicName: 'Background',
       clicked: false
     },
     {
       topicName: 'Flex',
+      clicked: false
+    },
+    {
+      topicName: 'Box Model',
       clicked: false
     }
   ];
